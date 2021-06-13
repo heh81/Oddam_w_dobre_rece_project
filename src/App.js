@@ -1,24 +1,40 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { BrowserRouter, Route, Switch } from "react-router-dom";
+import './scss/main.scss';
 
-function App() {
+import Home from "./components/Home";
+import WhatsTheMatter from "./components/WhatsTheMatter";
+import AboutUs from "./components/AboutUs";
+import Foundations from "./components/Foundations";
+import Contact from "./components/Contact";
+
+
+
+import * as Scroll from 'react-scroll';
+import { Link, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
+
+
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+
+    <BrowserRouter>
+
+
+      <div className="app">
+
+        <Switch>
+          <Route exact path="/" component={Home} />
+          <Route exact path="/o-co-chodzi" component={WhatsTheMatter} />
+          <Route exact path="/o-nas" component={AboutUs} />
+          <Route exact path="/fundacja-i-organizacja" component={Foundations} />
+          <Route exact path="/kontakt" component={Contact} />
+
+        </Switch>
+
+      </div>
+
+    </BrowserRouter>
   );
 }
 

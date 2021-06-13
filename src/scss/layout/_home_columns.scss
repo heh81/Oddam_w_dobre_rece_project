@@ -1,0 +1,38 @@
+.columns {
+    background: url(/assets/3_Columns_Background.png);
+    padding: 2rem;
+
+
+    &-boxes {
+        display: flex;
+        flex-direction: row;
+    }
+
+    &-box {
+        display: flex;
+        flex-direction: column;
+
+        &-title {
+            @include fontSettings(9rem, $font-base, 300, $numbersColor);
+            text-align: center;
+            letter-spacing: 0px;
+            opacity: 1;
+            margin: 2rem;
+        }
+
+        &-subtitle {
+            @include fontSettings(1.8rem, $font-base, 400, $mainTextColor);
+            text-align: center;
+            letter-spacing: -0.36px;
+            opacity: 1;
+        }
+
+        &-description {
+            @include fontSettings(1.6rem, $font-base, 300, $mainTextColor);
+            text-align: center;
+            letter-spacing: -0.32px;
+            opacity: 1;
+            margin: 2rem;
+        }
+    }
+}

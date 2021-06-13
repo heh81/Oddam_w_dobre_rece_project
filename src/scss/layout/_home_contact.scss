@@ -1,0 +1,75 @@
+.contact {
+
+    background-image: url(/assets/Background_Contact-Form.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: center;
+    opacity: 30%;
+    height: 90vh;
+    width: 100vw;
+
+
+    &-container {}
+
+    &-title {
+        @include fontSettings(3.8rem, $font-base, 400, $mainTextColor);
+        text-align: center;
+        letter-spacing: -0.76px;
+        opacity: 1;
+        margin: 2rem;
+
+    }
+
+    &-description {
+        @include fontSettings(1.6rem, $font-base, 600, $mainTextColor);
+        text-align: center;
+        letter-spacing: 0;
+
+    }
+
+    &-border {
+        border: 1px solid #707070;
+        width: 253px;
+        height: 0px;
+        margin: 2rem;
+
+    }
+
+    &-button {
+        width: 150px;
+        height: 50px;
+        border: 0.75px solid $mainTextColor;
+
+    }
+
+    &-foot {
+        display: flex;
+        flex-direction: row;
+        padding-top: 2rem;
+
+
+        &-copyright {
+            text-align: right;
+            @include fontSettings(1.8rem, $font-base, 400, $mainTextColor);
+            letter-spacing: 0px;
+            opacity: 1;
+            flex-grow: 5;
+            text-align: center;
+        }
+
+        &-fb {
+            background-image: url(/assets/Facebook.png);
+            width: 3rem;
+            height: 3rem;
+            margin-right: 1rem;
+
+        }
+
+        &-instagram {
+            background-image: url(/assets/Instagram.png);
+            width: 3rem;
+            height: 3rem;
+        }
+    }
+
+}

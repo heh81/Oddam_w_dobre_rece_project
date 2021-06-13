@@ -1,0 +1,52 @@
+//import Fonts
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+
+//Colors 
+
+$mainColorBackground: #FFFFFF;
+$secondColorBackground: #F0F1F1;
+
+$importantColor: #FAD648;
+
+$mainTextColor: #3C3C3C;
+$secondTextColor: #000000;
+$numbersColor: #5E5322;
+$loginColor: #737373;
+
+////////////////
+
+//Fonts
+$font-base: 'Open Sans',
+sans-serif;
+
+$font-alt: 'Merriweather',
+serif;
+
+//przykład do wykorzystania
+//@include fontSettings(1.4rem, $font-base, 800, $mainTextColor);
+
+//Mixin
+@mixin fontSettings($fontSize, $fontName, $fontWeight, $fontColor) {
+  font-size: $fontSize;
+  font-family: $fontName;
+  font-weight: $fontWeight;
+  color: $fontColor;
+}
+
+
+//media
+$mobile: 640px;
+$tablet: 1022px;
+$desktop: 1200px;
+///
+
+//svg
+
+@mixin svg($svg) {
+  background-image: url('data:image/png;base64,'+ $svg);
+  background-image: url('data:image/svg+xml,'+ $svg);
+  background-repeat: no-repeat;
+}
+
+;

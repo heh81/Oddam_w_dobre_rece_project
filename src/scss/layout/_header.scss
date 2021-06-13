@@ -1,0 +1,41 @@
+.header {
+    cursor: pointer;
+    margin: 3rem;
+
+    &-log {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+
+    }
+
+    &-login,
+    &-register {
+        padding: 10px 13px;
+        text-decoration: none;
+        @include fontSettings(1.3rem, $font-base, 400, $loginColor);
+
+        &:hover {
+            border: 0.75px solid $importantColor;
+        }
+    }
+
+    &-wrapper {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        height: 8rem;
+    }
+
+    &-list {
+        &-link {
+            padding: 10px 13px;
+            text-decoration: none;
+            @include fontSettings(1.8rem, $font-base, 400, $mainTextColor);
+
+            &:hover {
+                border: 0.75px solid $mainTextColor;
+            }
+        }
+    }
+}

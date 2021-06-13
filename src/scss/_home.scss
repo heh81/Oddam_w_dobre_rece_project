@@ -1,0 +1,3 @@
+.App-header {
+    @include fontSettings(5rem, $font-base, 600, $mainTextColor);
+}

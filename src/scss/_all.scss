@@ -1,0 +1,30 @@
+html,
+body {
+  margin: 0 auto;
+  padding: 0;
+  height: 100%;
+  @include fontSettings(62.5%, $font-base, 600, $mainTextColor);
+
+}
+
+//font-size: 62.5%; //  1rem = 10px
+
+body {
+  box-sizing: border-box;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.app {
+  width: 100vw;
+  height: 100vh;
+  text-align: center;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  min-height: 100%;
+}
